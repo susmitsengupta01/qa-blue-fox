@@ -3,7 +3,7 @@ import http from 'k6/http';
 import { sleep, check } from 'k6';
 
 export const options = {
-    stages: [
+    stages: [ 
         { duration: '30s', target: 10 }, // ramp up
         { duration: '2m', target: 10 }, // stable
         { duration: '30s', target: 0 }, // ramp-down to zero users
